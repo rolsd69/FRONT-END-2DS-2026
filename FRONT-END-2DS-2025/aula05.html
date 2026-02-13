@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        h1 {
+            /* alteração da fonte */
+            font-size: 2.5rem; 
+            font-family: Arial, Helvetica, sans-serif; 
+            font-weight: bold;
+
+            /* cor do texto */
+            color: #6c15cf;
+
+            /* Espaçamento */
+            margin: 20px 0;
+            padding: 10px;
+            /* background-color: blueviolet; */
+
+            /* sublinhado */
+            text-decoration: underline;
+
+            /* sombra no texto */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            /* background-color: #f4f4f4; */
+
+            /* borda no texto */
+            border: 2px solid #333333;
+        
+        }
+
+        /* efeito de hover (mudança no texto com o mouse) */
+        h1:hover {
+            color: red;
+            transition: color 0.3s ease;
+        }
+
+        h2 {
+            /* cores gradientes no texto */
+            background-image: linear-gradient(to right, #ff7e5f, #e87bfe);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 48px;
+            font-weight: bold;
+
+            /* animação */
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 3;
+            }
+        }
+    </style>
+    
+    <title>Estilizando cabeçalhos</title>
+</head>
+<body>
+    
+    <h1>Estilizando títulos</h1>
+    <h2>Estilizando títulos</h2>
+
+</body>
+</html>
