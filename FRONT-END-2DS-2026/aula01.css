@@ -24,6 +24,9 @@ body{
    border: 1px solid rgb(23, 8, 100);
    background-color: rgb(17, 0, 255);
    border-image: 3px;
+   display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 img{
