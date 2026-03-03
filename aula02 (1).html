@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aual02 - menu hamburguer</title>
+
+
+    <style>
+        .navlinks a {
+
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        <!-- estilo do botao hamburguer-->
+        .hamburguer{
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768){
+            .hamburguer
+            display: block;
+        }
+
+
+
+        .navbar {
+            display: none;
+            flex-direction: colunm;
+            position: abslute;
+            top: 60px; <!--altura da navbar-->
+            left: 0;
+            width: 100%;
+            background-color: black;
+        }
+        .logo {
+
+            color: white;
+            /* estilo de links */
+
+            .nav links{
+                display: flex;/* exibe horizontalemnte o menu */
+                flex-direction: column;
+                position: absolute;
+                top: 60px; <!--altura do navbar-->
+                left: 0;
+                width: 100%;
+                background-color: #333;
+                text-align: ;
+                padding: 0;
+            } 
+        
+        }
+
+    </style>
+    
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Meu site</div>
+
+        <!-- Botão Hamburguer para responsividade -->
+         <button class="Hamburguer" id="hamburguer-btn">
+            &#9776; <!-- Simbolo do icone -->
+         </button>
+
+        <!-- Lista de itens do menu --> 
+         <ul class="nav-links" id="nav-links">
+            <li>
+            <li>
+                <a href="https://www.youtube.com/watch?v=eprsZCecSbI">inicio</a>
+                
+            </li>
+                 <a href="https://www.youtube.com/watch?v=eprsZCecSbI">sobre</a>
+            </li>
+            </li>
+                 <a href="https://www.youtube.com/shorts/YmMTRJVxOkg">serviços</a>
+            </li>
+        </li>
+        <a href="https://www.youtube.com/shorts/9pnpI-7YmV4">contato</a>
+        </li>
+           
+                
+                
+
+            
+         </ul>
+    </nav>
+
+    <div style=" padding: 20px;">
+        <h1>Contuedo da pagina</h1>
+        <p>Redimensione a janela do navegador para o menu mudar. </p>
+    </div>
+    
+</body>
+</html>
