@@ -8,13 +8,12 @@
 
     <style>
         .navlinks a {
-
             color: white;
             text-decoration: none;
             font-size: 20px;
         }
 
-        <!-- estilo do botao hamburguer-->
+        /* estilo do botao hamburguer */
         .hamburguer{
             display: none;
             background: none;
@@ -25,35 +24,53 @@
         }
 
         @media screen and (max-width: 768){
-            .hamburguer
-            display: block;
+            .hamburguer {
+                display: block;
+            }
+
+            .navlinks{
+                display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 60px; /*altira da navbar*/
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 20px;
+            }
+
+            .navlinks.active{
+                display: flex;
+            }
+            
         }
 
 
 
         .navbar {
-            display: none;
-            flex-direction: colunm;
-            position: abslute;
-            top: 60px; <!--altura da navbar-->
-            left: 0;
-            width: 100%;
-            background-color: black;
+           background-color: black;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+           padding: 15px;
         }
         .logo {
 
             color: white;
+            font-size: 20px;
+            font-weight: bold;
             /* estilo de links */
 
             .nav links{
                 display: flex;/* exibe horizontalemnte o menu */
                 flex-direction: column;
                 position: absolute;
-                top: 60px; <!--altura do navbar-->
+                top: 60px; 
                 left: 0;
                 width: 100%;
                 background-color: #333;
-                text-align: ;
+                text-align: 0;
                 padding: 0;
             } 
         
@@ -77,7 +94,7 @@
          <ul class="nav-links" id="nav-links">
             <li>
             <li>
-                <a href="https://www.youtube.com/watch?v=eprsZCecSbI">inicio</a>
+                <a href="https://www.youtube.com/watch?v=eprsZCecSbI">inicio </a>
                 
             </li>
                  <a href="https://www.youtube.com/watch?v=eprsZCecSbI">sobre</a>
@@ -100,6 +117,21 @@
         <h1>Contuedo da pagina</h1>
         <p>Redimensione a janela do navegador para o menu mudar. </p>
     </div>
-    
+        <script>
+            alert("anjos sem paciencia")
+            //seleciona os elementos em html
+            const hamburguerBtn = documento.getElemntById('hamburger-btn')
+            const navlinkis = document.getElementById('nav-links')
+
+            //adicione um botão eo evento de clicl//
+
+                hamburguerBtn.addEventListener('clik'); () => {
+                navlinks.classList.toggle('active');
+                
+            }
+                
+        </script>
+
+
 </body>
 </html>
