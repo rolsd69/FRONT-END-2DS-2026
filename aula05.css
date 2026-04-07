@@ -27,14 +27,33 @@ body{
 
 
 .linha{
-    width: 80%;
+    width: 90%;
     height: 100px;
     padding: 10px;
-    background-color: rgb(4, 34, 142);
+    background-color: rgb(8, 103, 220);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 input{
     padding: 10px;
     border-radius: 10px;
-    width: 30%;
+    width: 25%;
+}
+
+textarea {
+    width: 40%;
+    height: 70px;
+
+}
+
+.btn-enviar {
+    background-color: rgb(88, 0, 91);
+    color: white;
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    border-radius: 5px;
+
 }
