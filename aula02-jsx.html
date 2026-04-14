@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA01 - JAVASRIPT</title>
+</head>
+<body>
+
+    <input type="text" id="teste">
+    <button onclick="enviar()">Enviar</button>
+    
+    
+    <label for="">CAMPO 01</label>
+    <input type="text" id="nome">
+    <label for="">CAMPO 02</label>
+    <input type="text" id="idade">
+    <label for="">CAMPO 03</label>
+    <input type="text" id="email">
+    <label for="">CAMPO 04</label>
+    <input type="text" id="senha">
+
+    <button onclick="mostrarDados">Clique aqui para envair os dados para o console</button>
+
+    <div id="resultado1"></div>
+    <div id="resultado2"></div>
+    <div id="resultado3"></div>
+    <div id="resultado4"></div>
+
+</body>
+
+<script>
+    let areaTexto1 = document.getElementById("resultado1");
+    let areaTexto2 = document.getElementById("resultado2");
+    let areaTexto3 = document.getElementById("resultado3");
+    let areaTexto4 = document.getElementById("resultado4");
+
+    function mostrarDados(){
+
+    let nome = document.getAnimations("nome").value;
+    let idade = document.getAnimations("idade").value;
+    let email = document.getAnimations("email").value;
+    let nsenha = document.getAnimations("senha").value;
+
+    console.log(nome);
+    console.log(idade);
+    console.log(email);
+    console.log(senha);
+
+        let info1 = nome;
+        let info2 = idade;
+        let info3 = email;
+        let info4 = senha;
+        areaTexto.innerHTML = "<h3>Voce digitou: "+ info1 + "</h3> <br>"
+        areaTexto.innerHTML = "<h3>Voce digitou: "+ info2 + "</h3> <br>"
+        areaTexto.innerHTML = "<h3>Voce digitou: "+ info3 + "</h3> <br>"
+        areaTexto.innerHTML = "<h3>Voce digitou: "+ info4 + "</h3> <br>"
+}
+
+</script>
+
+</html>
