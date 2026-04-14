@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AULA01 - JAVASRIPT</title>
+</head>
+<body>
+
+    <input type="text" id="teste">
+    <button onclick="enviar()">Enviar</button>
+    
+</body>
+
+
+
+<script>
+
+    let nome = "João";
+    let idade = 15;
+    let altura = 1.72;
+    let estudando = true;
+
+    document.write("<h1>"+nome+"</h1>");
+    document.write("<br>");
+    document.write("<h2>"+idade+"</h2>");
+    document.write("<br>");
+    document.write(altura);
+    document.write("<br>");
+    document.write(estudante);
+
+    let teste = document.getElementById("teste");
+    let areaTexto = document.getElementById("resultado");
+
+    function enviar() {
+        //PEGAMOS O .value PARA O TEXTO
+        let areaTexto = teste.value;
+        alert("Voce digitou:"+ mensagem);
+        areaTexto.innerHTML = "<h3>Voce digitou: "+ mensagem + "</h3>"
+    }
+</script>
+
+
+
+</html>
